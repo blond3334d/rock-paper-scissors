@@ -4,17 +4,174 @@
     box-sizing: border-box;
 }
 
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
 #gameTitle {
     text-align: center;
     font-size: clamp(1.8rem, 10vw, 5rem);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 20px;
 }
 
 .score-board-container {
     background-color: rgb(210, 244, 255);
     height: auto;
     width: 100%;
-    max-width: clamp(70vw, 80vw, 80vw);
+    max-width: clamp(30vw, 75vw, 75vw);
+    margin: auto;
+    border-radius: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.score-board,
+.gameDetails {
+    text-align: center;
+    padding: min(10px, 8%);
+    font-weight: bold;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.score-subcontainer {
+    background-color: white;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 1.5em;
+}
+
+.scores-rounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: min(1.5em, 8%);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.round {
+    padding-top: 30px;
+}
+
+.player-score {
+    
+}
+
+.text-label {
+    font-size: clamp(16px, 1vw, 16px);
+}
+
+
+.selection {
+    font-size: clamp(1rem, 1vw, 1rem);
+}
+
+#user-score,
+#computer-score,
+#current-round {
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.gameDetails {
+    padding-top: 25px;
+}
+
+.game-deets-container {
+    background: linear-gradient(
+        to right,
+        rgba(56, 189, 248, 0) 0%,
+        rgb(255, 255, 255) 20%,
+        rgb(255, 255, 255) 50%,
+        rgb(255, 255, 255) 80%,
+        rgba(56, 189, 248, 0) 100%
+    );
+
+    padding: 10px 30px;
+    border-radius: 4px;
+    max-width: 90%;
     margin: auto;
 }
 
+#status {
+    font-weight: bold;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 10px 0;
+}
+
+#who-beats-who {
+    color: rgba(57, 53, 53, 0.777);
+}
+
+.selection-container {
+    max-width: 90%;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: min(2em, 8%);
+    margin: 20px auto;
+
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+#rock {
+    background-color: rgba(34, 113, 187, 0.567);
+    padding: min(2em, 20%) 2em;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#rock:hover {
+    transition: background-color 0.50s;
+    background-color: rgba(20, 139, 250, 0.567);
+    border: solid rgba(11, 53, 93, 0.567);
+    transform: scale(1.05);
+}
+
+#paper {
+    background-color: rgba(5, 150, 101, 0.567);
+    padding: min(2em, 20%) 2em;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+#paper:hover {
+    transition: background-color 0.50s;
+    background-color: rgba(21, 233, 162, 0.567);
+    border: solid rgba(49, 142, 89, 0.567);
+    transform: scale(1.05);
+}
+
+#scissors {
+    background-color: rgba(158, 35, 10, 0.567);
+    padding: min(2em, 20%) 2em;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+#scissors:hover {
+    transition: background-color 0.50s;
+    background-color: rgba(255, 42, 0, 0.567);
+    border: solid rgba(232, 87, 47, 0.567);
+    transform: scale(1.05);
+}
+
+.footnote {
+    color: rgba(57, 53, 53, 0.777);
+}

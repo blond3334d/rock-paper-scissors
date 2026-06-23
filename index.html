@@ -16,21 +16,35 @@
         <div class="score-subcontainer">
             <div class="scores-rounds">
                 <div class="text player-score">
-                    <p>USER SCORE</p>
-                    <p>0</p>
+                    <p class="text-label">USER SCORE</p>
+                    <p id="user-score">0</p>
+                </div>
+
+                <div class="text player-score round">
+                    <p class="text-label">ROUND</p>
+                    <p id="current-round">1/5</p>
                 </div>
 
                 <div class="text player-score">
-                    <p>ROUND</p>
-                    <p>1/5</p>
-                </div>
-
-                <div class="text player-score">
-                    <p>COMPUTER SCORE</p>
-                    <p>0</p>
+                    <p class="text-label">COMPUTER SCORE</p>
+                    <p id="computer-score">0</p>
                 </div>
             </div>
         </div>
+
+        <div class="text gameDetails">GAME STATUS</div>
+        <div class="game-deets-container">
+            <div class="text" id="status">ROUND 1 STARTS NOW</div>
+            <div class="text" id="who-beats-who">Awaiting your move...</div>
+        </div>
+
+        <div class="selection-container">
+            <div class="text selection" id="rock">ROCK</div>
+            <div class="text selection" id="paper">PAPER</div>
+            <div class="text selection" id="scissors">SCISSORS</div>
+        </div>
+
+        <div class="text footnote">Make your selection to play!</div>
     </div>
 
     <script src="main.js"></script>
