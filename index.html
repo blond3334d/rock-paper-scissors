@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ade's Rock, Paper, Scissors Game</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="text-align: center; font-size: 3rem; font-family: Verdana, Geneva, Tahoma, sans-serif;">Rock, Paper, Scissors</h1>
-    <h4 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">&copy; blondddead</h4>
+    <div id="gameTitle">ROCK, PAPER, SCISSORS</div>
+
+    <div class="score-board-container">
+        <p class="text score-board">SCORE BOARD</p>
+
+        <div class="score-subcontainer">
+            <div class="scores-rounds">
+                <div class="text player-score">
+                    <p>USER SCORE</p>
+                    <p>0</p>
+                </div>
+
+                <div class="text player-score">
+                    <p>ROUND</p>
+                    <p>1/5</p>
+                </div>
+
+                <div class="text player-score">
+                    <p>COMPUTER SCORE</p>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
