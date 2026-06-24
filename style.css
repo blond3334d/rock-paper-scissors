@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(to right, rgba(37, 54, 62, 0.973), rgb(18, 23, 80));
+}
+
 .text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -14,6 +18,7 @@
     font-size: clamp(1.8rem, 10vw, 5rem);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-bottom: 20px;
+    color: rgb(210, 244, 255);
 }
 
 .score-board-container {
@@ -24,7 +29,8 @@
     margin: auto;
     border-radius: 1.5em;
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+    box-shadow: 1px 1px 50px 1px rgb(64, 31, 72);
 }
 
 .score-board,
@@ -67,7 +73,7 @@
 
 
 .selection {
-    font-size: clamp(1rem, 1vw, 1rem);
+    font-size: clamp(0.5rem, 2vw, 3rem);
 }
 
 #user-score,
@@ -114,10 +120,10 @@
     border: 1px solid #e2e8f0;
     border-radius: 12px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
     padding: min(2em, 8%);
-    margin: 20px auto;
+    margin: 15px auto;
 
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
@@ -174,4 +180,8 @@
 
 .footnote {
     color: rgba(57, 53, 53, 0.777);
+}
+
+button {
+    border: none;
 }
