@@ -1,45 +1,45 @@
-# Bato-Bato Pick!
+# Bato-Bato Pick! 🥊
 
 the battle of the gut feeling between You and the Computer: an interactive Rock, Paper, and Scissors web game.
 
 ## Features
 
-    1. Selection Button
-        The player pick their weapon by clicking any of the 'Rock', 'Paper' and 'Scissors' button.
-    2. Score Board
-        Since it is a 'First to get 5 points' type of game, the player can track their current scores.
-        I added the tracking of the number of rounds to make it more interactive. For example, my friends and I will decide to beat the computer with the lowest number of rounds possible.
-    3. Game Status
-        This announces who is the winner for the round. The little description below it also tells the player what was the Computer's pick for that specific round.
+* **Selection Buttons:** The player picks their weapon by clicking any of the 'Rock', 'Paper', and 'Scissors' buttons.
+* **Scoreboard:** Since it is a 'First to get 5 points' type of game, the player can track their current scores. I also added round tracking to make it more competitive --- for example, when my friends and I decide to beat the computer in the lowest number of rounds possible, we can track who's the winner among us by comparing the number of rounds we beat the computer.
+* **Game Status & Log:** This announces the winner of each individual round. The descriptions below it also dynamically tell the player what the Computer picked for that specific round.
 
-## Process & Stack
+---
 
-    1. JavaScript
-        The purpose of this project was mainly to apply the basics of Javascript. Initially, this was a console-driven program, where everything --- from the input to the displaying of winners --- happens in the console. So, I first created the game logic and made sure it runs fine in the console.
+## Process & Tech Stack
 
-        Concepts I Applied
-            - Conditional Statements (if-else & switch-case)
-            - Function declarations, definitions, and calls
-            - Loops
+### 1. JavaScript
+The main purpose of this project was to apply the basics of JavaScript. Initially, this was a console-driven program where everything --- from the input to the displaying of winners --- happened strictly in the console. I first created the core game logic there and made sure the conditions ran flawlessly.
 
-    2. HTML & CSS
-        Built the UI. These are used to make the game more interactive. I also tried to make the output adaptable to different window sizes (a part of styling where I'm really having trouble with), but that output was the best that I can do for now.
+**Concepts Applied:**
+* Conditional Statements (`if-else` & `switch-case`)
+* Function declarations, definitions, and calls
+* Loops
 
-        Concepts I Applied
-            - Grid
-            - CSS FUNCTIONS like clamp(), min(), minmax(), repeat()
-            - z-index and positioning
+### 2. HTML & CSS
+Once the logic was ready, I built the UI to make the game more interactive. I also tried to make the layout adaptable to different window sizes (a part of styling where I usually have a hard time), but using modern layout systems helped me achieve the best result I can do for now.
 
-    3. JavaScript (DOM Manipulation & Events)
-        After adding the UI, linking it to JavaScript was the hardest challenge in this project. I had to remove most of my code for the game logic in the first part. One key takeaway for this part was that loops (while, for, or do-while loop) don't really work for DOM! The webpage crashes everytime I try to use a loop, lol.
+**Concepts Applied:**
+* CSS Grid layout
+* Fluid CSS functions: `clamp()`, `min()`, `minmax()`, and `repeat()`
+* Layering and centering using `z-index` and position rules
 
-        Concepts I Applied
-            - Selectors
-            - Events
-            - Manipulating Classes and Values
+### 3. JavaScript (DOM Manipulation & Events)
+After adding the UI, linking it to JavaScript was the hardest challenge of this project. I had to remove most of my old console game logic. One massive takeaway for this part was that **loops (`while`, `for`, or `do-while`) don't work for DOM tracking!** The webpage crashed every single time I tried to use a traditional loop, lol.
 
-## Key Takeaways
+**Concepts Applied:**
+* DOM Selectors (`querySelector` / `querySelectorAll`)
+* Event Listeners (`click` events)
+* Dynamically manipulating CSS classes and element values
 
-    1. Breaking down the process into smaller parts is really a game changer.
-    2. Learned some important concepts of CSS. I'm lowkey getting the hang of it, still hate it tho.
-    3. DOM Manipulation and Event Listeners! The highlight for me. I now know how the linking of HTML and the logic works. Still confusing, had to watch a bunch of video tutorials, but I'll soon get it.
+---
+
+## Key Takeaways 🧠
+
+1. Breaking down a project into smaller, independent parts (Logic $\rightarrow$ UI $\rightarrow$ Integration) is makes the task easier.
+2. Learned some critical concepts of CSS layouts. I'm lowkey getting the hang of it... still hate it tho.
+3. DOM Manipulation and Event Listeners were the absolute highlights for me. I now understand how the bridge between HTML and program logic actually works. It was confusing at first, and I had to watch a bunch of video tutorials, but I'll soon get it.
