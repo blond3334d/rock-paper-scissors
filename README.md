@@ -43,3 +43,7 @@ After adding the UI, linking it to JavaScript was the hardest challenge of this 
 1. Breaking down a project into smaller, independent parts (Logic $\rightarrow$ UI $\rightarrow$ Integration) is makes the task easier.
 2. Learned some critical concepts of CSS layouts. I'm lowkey getting the hang of it... still hate it tho.
 3. DOM Manipulation and Event Listeners were the absolute highlights for me. I now understand how the bridge between HTML and program logic actually works. It was confusing at first, and I had to watch a bunch of video tutorials, but I'll soon get it.
+
+## Project Demo
+https://github.com/user-attachments/assets/13e74473-bb81-4ca4-9b05-9ee919b6d556
+
