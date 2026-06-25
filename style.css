@@ -63,10 +63,6 @@ body {
     padding-top: 30px;
 }
 
-.player-score {
-    
-}
-
 .text-label {
     font-size: clamp(16px, 1vw, 16px);
 }
