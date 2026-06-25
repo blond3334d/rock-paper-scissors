@@ -38,7 +38,7 @@ After adding the UI, linking it to JavaScript was the hardest challenge of this 
 
 ---
 
-## Key Takeaways 🧠
+## My Takeaways
 
 1. Breaking down a project into smaller, independent parts (Logic $\rightarrow$ UI $\rightarrow$ Integration) is makes the task easier.
 2. Learned some critical concepts of CSS layouts. I'm lowkey getting the hang of it... still hate it tho.
